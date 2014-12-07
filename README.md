@@ -1,4 +1,4 @@
-## This is a alpha Software that is not ready yet. And is under **HEAVEY DEVELOPMENT**
+## This is a alpha Software that is under **HEAVEY DEVELOPMENT**
 
 
 
