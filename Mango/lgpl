@@ -15,9 +15,3 @@
  *
  * Author: Joseph Mills  <josephjamesmills@gmail.com>
  */
-#include "mangotemporaryfile.h"
-
-MangoTemporaryFile::MangoTemporaryFile(QObject *parent) :
-    QTemporaryFile(parent)
-{
-}
