@@ -1,7 +1,6 @@
 ## This is a alpha Software that is not ready yet. And is under **HEAVEY DEVELOPMENT**
 
 
-![alt tag](http://imgs.xkcd.com/comics/sandwich.png)
 
 
 ## Deps for compiling
