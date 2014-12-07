@@ -48,7 +48,6 @@ SOURCES += \
     speechrecognition.cpp \
     texttospeech.cpp \
     oauth2.cpp \
-    licencegenerator.cpp \
     mangosharedmemory.cpp \
     mangounits.cpp \
     mangodevice.cpp \
@@ -107,7 +106,6 @@ HEADERS += \
     speechrecognition.h \
     texttospeech.h \
     oauth2.h \
-    licencegenerator.h \
     mangosharedmemory.h \
     mangounits.h \
     mangodevice.h \
