@@ -1,5 +1,14 @@
+<<<<<<< HEAD
 ## This is a Alpha Software that is under **HEAVEY DEVELOPMENT**
 
+=======
+## This is a alpha Software that is under **HEAVEY DEVELOPMENT**
+
+
+
+
+## Deps for compiling
+>>>>>>> e548bc66fa08fc76b40cdeb5b0b3c58464d98769
 ## Linux
 ***
 
