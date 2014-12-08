@@ -1,20 +1,44 @@
-## This is a alpha Software that is not ready yet. And is under **HEAVEY DEVELOPMENT**
+## This is a Alpha Software that is under **HEAVEY DEVELOPMENT**
 
-
-![alt tag](http://imgs.xkcd.com/comics/sandwich.png)
-
-
-## Deps for compiling
 ## Linux
 ***
 
+## Building
+## Deps for compiling
+### debian 
+```bash
+sudo apt-get install libavahi-compat-libdnssd-dev libbotan1.10-dev mysql-client-5.5 libmysqlclient-dev libmodbus-dev asciidoc autoconf automake autotools-dev dh-autoreconf libtool xmlto xsltproc libcurl$
+```
+### Qml Plugins and Tools Application
+```bash
+mkdir build
+cd build
+qmake ../qmlplugins.pro
+make
+make install
+cd ../
+rm -r build
+```
+### Documentation for the plugins
 
+```bash
+mkdir build
+cd build
+qmake ../qmlplugins.pro
+make docs
+make install
+cd ../
+```
+
+## Depedencys
+***
 ### QT
 Qt 5.X should be installed This code has not yet been tested against < qt5
 check with your distro on this.
 Or build it yourself or get the online installer.  If you are building yourself and or using the online installer
+libavahi-compat-libdnssd-dev
 
-## Botan
+### Botan
 This is used for the Qml ssh plugins and the ssh lib's also
 
 multiplatform crypto library (development)
@@ -29,7 +53,7 @@ This package contains the development files.
 
 package: libbotan1.10-dev
 
-### for bonbjour/avahi
+### Avahi
 Used for the qmlplugin from creating scanning and alot that has to do with bonjour/avahi/zeroconf
 
 Development headers for the Avahi Apple Bonjour compatibility library
@@ -42,11 +66,12 @@ This package contains the development headers for Apple Bonjour compatibility li
 
 package: libavahi-compat-libdnssd-dev 
 
-### mysql and its api 
+### Mysql Api
 You must also build the plugin for mysql database,
 So that one can alter tables and coloumns and Rows.
-For more info see the Documentation on
-sqlQuery and sqlQueryModel
+
+The lugins that are used include
+sqlQuery and sqlQueryModel 
 
 ```bash
 cd <Qt Path to Src>/qtbase/src/plugins/sqldrivers/mysql/
@@ -58,6 +83,7 @@ qmake "INCLUDE_PATH=/usr/include/mysql/" "LIBS+=-L/usr/lib/x86_64-linux-gnu/libm
 make
 make install
 ```
+
 package: mysql-client-5.5 libmysqlclient-dev
 
 ### modbus
@@ -65,7 +91,6 @@ This is for expermentall use of modbus.  This binding is under **HEAVEY DEVELOPM
 Header file needed is
 modbus/modbus.h
 modbus-version.h
-
 
 packages: libmodbus-dev asciidoc autoconf automake autotools-dev dh-autoreconf libtool xmlto xsltproc
 
@@ -81,30 +106,3 @@ coming soon
 
 ## Mac
 coming soon
-
-
-## Building 
-
-This application is mainly wrote in Qt c++ javascript bash.
-It uses qmake to configure the Makefile.
-### Qml Plugins and Tools Application
-```bash
-mkdir build 
-cd build 
-qmake ../qmlplugins.pro 
-make 
-make install
-cd ../
-rm -r build  
-```
-### Documentation for the plugins 
-
-```bash
-mkdir build
-cd build
-qmake ../qmlplugins.pro    
-make docs
-make install
-cd ../
-```
-
