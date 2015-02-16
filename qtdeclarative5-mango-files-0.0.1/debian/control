@@ -1,0 +1,21 @@
+Source: qtdeclarative5-mango-files
+Section: libs
+Priority: optional
+Maintainer: Joseph Mills <josephjamesmills@gmail.com>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.5
+
+Package: qtdeclarative5-mango-files
+Architecture: any
+Depends: libc6 (>= 2.14),
+         libqt5core5a (>= 5.3.0),
+         libqt5qml5 (>= 5.0.2),
+         libstdc++6 (>= 4.1.1),
+         qt5-default,
+         qt5-qmake,
+         qtbase5-dev,
+         ${misc:Depends},
+         ${shlibs:Depends}
+Description: Mango Files a Qml plugin for interacting with files
+ This plugin is used to expose things like qdir nd qfile and someother classes
+ to QML. This plugin is under heavey development and is subject to change.

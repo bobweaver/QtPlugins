@@ -1,0 +1,19 @@
+Source: libqt5qssh5
+Section: libs
+Priority: optional
+Maintainer: Joseph Mills<josephjamesmills@gmail.com>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.5
+
+Package: libqt5qssh5
+Architecture: any
+Section: libs
+Depends: libbotan1.10-dev,
+         libqt5core5a,
+         libqt5network5,
+         qt5-qmake,
+         qtbase5-dev-tools,
+         ${misc:Depends},
+         ${shlibs:Depends}
+Description: a libary that is used to access lib botan
+ This libary is used by two other inhouse libarys

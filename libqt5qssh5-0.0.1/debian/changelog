@@ -1,0 +1,11 @@
+libqt5qssh5 (0.0.1-2) UNRELEASED; urgency=medium
+
+  * reworte it all into one meat package.
+
+ -- Joseph Mills <josephjamesmills@gmail.com>  Thu, 12 Feb 2015 09:26:07 -0700
+
+libqt5qssh5 (0.0.1-1) unstable; urgency=low
+
+  * Initial release
+
+ -- Joseph Mills <josephjamesmills@gmail.com>  Fri, 30 Jan 2015 16:12:15 -0700

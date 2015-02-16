@@ -1,0 +1,3 @@
+module Mango.Terminal
+plugin Mango.Terminal
+classname MangoTerminalExtensionPlugin

@@ -1,0 +1,7 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: libqt5qssh5
+Source: <url://example.com>
+
+Files: *
+Copyright: 2014 Joseph Mills josephjamesmills@gmail.com
+License: LGPL

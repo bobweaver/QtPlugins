@@ -1,4 +1,5 @@
 # C++ objects and libs
+
 *.slo
 *.lo
 *.o
@@ -10,10 +11,13 @@
 *.dylib
 
 # Qt-es
+
 /.qmake.cache
 /.qmake.stash
 *.pro.user
 *.pro.user.*
+*.qbs.user
+*.qbs.user.*
 *.moc
 moc_*.cpp
 qrc_*.cpp
@@ -22,12 +26,21 @@ Makefile*
 *-build-*
 
 # QtCreator
+
 *.autosave
 
 #QtCtreator Qml
 *.qmlproject.user
 *.qmlproject.user.*
 
-# kate Stuff
-*.kate-swp
+
+# Debian 
+
+*.gz
+*.deb
+*.sources
+*.changes
+*.xz
+*.build
+*.dsc
 

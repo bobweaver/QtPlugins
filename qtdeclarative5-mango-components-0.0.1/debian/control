@@ -1,0 +1,20 @@
+Source: qtdeclarative5-mango-components
+Section: libs
+Priority: optional
+Maintainer: Joseph Mills <josephjamesmills@gmail.com>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.5
+
+Package: qtdeclarative5-mango-components
+Architecture: any
+Depends: libc6 (>= 2.14),
+         libqt5core5a (>= 5.3.0),
+         libqt5qml5 (>= 5.0.2),
+         libstdc++6 (>= 4.1.1),
+         qt5-default,
+         qt5-qmake,
+         qtbase5-dev,
+         ${misc:Depends},
+         ${shlibs:Depends}
+Description: Mango Components a Qml plugin for interacting with mango's components
+ This plugin is under heavey development

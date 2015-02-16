@@ -1,0 +1,22 @@
+#!/usr/bin/make -f
+#DPKG_EXPORT_BUILDFLAGS = 1
+include /usr/share/dpkg/default.mk
+
+export DPKG_GENSYMBOLS_CHECK_LEVEL=4
+DEB_HOST_MULTI_ARCH ?= $(shell dpkg-architecture -qDEB_BUILD_MULTIARCH)
+DEB_HOST_ARCH ?= $(shell dpkg-architecture -qDEB_HOST_ARCH)
+export QT_SELECT := qt5
+
+# main packaging script based on dh7 syntax
+%:
+	dh $@ --fail-missing
+
+#override_dh_build:
+#	dh_auto_build --parallel
+#	dh_auto_build --parallel docs
+
+#override_dh_auto_install-indep:
+#	make INSTALL_ROOT=$(CURDIR)/debian/tmp install_docs
+
+#override_dh_install:
+#	dh_install --fail-missing
